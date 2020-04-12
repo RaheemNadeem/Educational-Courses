@@ -1,0 +1,167 @@
+*{
+
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    font-family: lato;
+
+    line-height: 1.7;
+    font-size: 16px;
+    color: #ffcfcf;
+   background-color: rgba(145, 159, 162, 0.78);
+
+
+    padding: 30px;
+
+}
+.header{
+
+
+    height: 95vh;
+   background-image:linear-gradient(to right bottom,#0285b5 ,#e2b65a  )
+    background-size: cover;
+    background-position: top;
+   clip-path: polygon(0 5%, 100% 0, 100% 80%, 0% 100%);
+
+
+}
+.heading
+{
+
+
+
+    text-transform: uppercase;
+    color: azure;
+    transform: rotate(-3.5deg);
+
+}
+.heading-primary
+{
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 40px;
+
+
+}
+.heading-sub
+{
+        display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 9.6px;
+
+
+}
+.text-box{
+
+        position: absolute;
+        top: 70%;
+        left: 30%;
+    transform: translate(-50%,-70%);
+
+
+}
+ul {
+       position: absolute;
+
+        top: 12%;
+        right: 60%;
+
+    transform: rotate(-2deg);
+    text-decoration: none;list-style: none;
+    background-color: rgba(145, 159, 162, 0.78);
+
+
+}
+ li {
+
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+     font-weight: 900;
+
+
+}
+li a:link,
+  li  a:visited{
+
+
+     text-decoration: none;
+    font-weight: 00;
+    color:rgb(245, 255, 255);
+   padding: 5px;
+
+    border-radius: 3px 3px;
+}
+li a:hover,
+li a:active{
+
+    border-bottom: 1.5px solid white;
+    background-color: #ededed;
+    transition: background-color 0.4s;
+    color: #849595;
+
+
+}
+.about
+{
+
+
+
+    height: 95vh;
+   background-image:linear-gradient(to right bottom,#0285b5 ,#e2b65a  ),url(mm.jpg);
+
+
+    background-size: cover;
+    background-position: top;
+   clip-path: polygon(0 20%, 100% 3%, 100% 90%, 0% 100%);
+
+
+
+
+
+
+
+
+}
+
+.text-bo{
+
+
+    position: absolute;
+    top: 160%;
+    left: 10%;
+}
+.heading-primary2
+{
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 20px;
+
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.v{
+
+
+     height: 95vh;
+   background-image:url(../s2.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    background-color: white;
+
+
+}

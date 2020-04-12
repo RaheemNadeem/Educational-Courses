@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/add.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+
+<body>
+<!--
+<div class="autho">
+
+    <h1>
+
+        Admin Panel
+    </h1>
+    <form action="/add" method="post">
+        <input type="text" placeholder="Enter your Img link" name="urId"  autocomplete="off"/><br>
+        <input type="text" placeholder="Enter your Cloud link" name="urPass" /><br>
+        <button type="submit" name="button" >Login</button>
+
+        <h2><%=message%></h2>
+        </form>
+
+
+
+  <form action="/remove" method="post">
+
+    <input type="text" placeholder="Enter your Img link" name="rlink" required autocomplete="off"/><br>
+
+    <button type="submit" name="button" >REMOVE</button>
+
+
+    </form>
+
+</div>
+
+
+-->
+<div class="login-page">
+ <div class="form">
+
+
+  <div class="login-page">
+
+   <form class="login-form" action="/add" method="post">
+
+    <select id="country" name="filename">
+      <option value="web">Web Development</option>
+      <option value="prod">Productivity</option>
+      <option value="android">Android Development</option>
+      <option value="digi">Digital Editing</option>
+      <option value="ds">Data Structures</option>
+      <option value="math">Math</option>
+    </select><br><br>
+     <input type="text" placeholder="Enter Image Link" name="urId" autocomplete="off"/><br>
+     <input type="text" placeholder="Enter Cloud Link" name="urPass" /><br>
+     <button type="submit" name="button" >Add</button><br>
+          <p class="message"><%=message%></p><br>
+          </form>
+         <form action="/remove" method="post">
+           <select id="country" name="filename1">
+             <option value="web">Web Development</option>
+             <option value="prod">Productivity</option>
+             <option value="android">Android Development</option>
+             <option value="digi">Digital Editing</option>
+             <option value="ds">Data Structures</option>
+             <option value="math">Math</option>
+           </select><br><br>
+
+              <input type="text" placeholder="Enter Link to remove" name="rlink" autocomplete="off"/>
+               <button type="submit" name="button" >Remove</button>
+
+
+
+   </form>
+
+ </div>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
