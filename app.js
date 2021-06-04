@@ -22,7 +22,7 @@ var message="";
 
 fs.readFile(`${__dirname}/android.json`,'utf-8',(err,data) => {
 const productData = JSON.parse(data);
-android= productData;
+android = productData;
 
 });
 fs.readFile(`${__dirname}/web.json`,'utf-8',(err,data) => {
@@ -62,7 +62,7 @@ let output = temp.replace(/{%%link%%}/g,el.link);
  output = output.replace(/{%%img%%}/g,el.img);
  return output;
 }
-//////////////Starting server///////////////////////////////
+//////////////Starting server////////////////////////////////
 
 let port = process.env.PORT;
 if (port == null || port == "") {
@@ -75,6 +75,7 @@ if (port == null || port == "") {
 app.listen(port,function(){
 console.log(`Server Has started on port ${port}  Successfully`);
 });
+
 //////////////////////////Getting Requests from the Server//////////////////
 app.get("/",function(req,res){
 res.render("index");
@@ -145,7 +146,7 @@ res.render("Admin",{message:""});
 
 app.post("/Login",function(req,res){
 
-            if( req.body.urId=="NaddyAltair"&& req.body.urPass=="meriwebsite" )
+            if( req.body.urId=="Altair"&& req.body.urPass=="password" )
             {
               console.log("Admin Authorization Granted");
               res.render("add",{message:""});
